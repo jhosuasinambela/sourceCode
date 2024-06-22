@@ -35,6 +35,8 @@ void addItem() {
   inventory.push_back(Item(name, quantity, price));
 }
 
+// this function to add the param to enter the value
+
 void showInventory() {
   if (inventory.empty()) {
     cout << "Inventaris kosong!" << endl;
@@ -46,6 +48,8 @@ void showInventory() {
     cout << " - " << item.name << ": " << item.quantity << " pcs (Rp" << item.quantity * item.price << ")" << endl;
   }
 }
+
+// this function above explain about show invetory if null or exists
 
 float calculateTotalValue() {
   float totalValue = 0;
